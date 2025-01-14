@@ -1,0 +1,47 @@
+/*
+Color palette:
+    #7FADF2         lighter
+    #5493EF
+    #5493EF
+    #0F66E6
+    #064BB1         darker
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #5493EF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.logo { 
+    margin-left: 20px; 
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.nav_left, .nav_right{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav_right{
+    margin-right: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: flex; align-items: center;     /* Centrer le texte */
+}
+nav a:hover {
+    background-color: #064BB1;
+    border-radius: 5px;
+}
+

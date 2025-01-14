@@ -1,0 +1,1 @@
+Apache configuré pour http://php.localhost/info.php
