@@ -2,8 +2,8 @@ CREATE TABLE IF NOT EXISTS users (
     user_id tinyint(4) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     user_firstname varchar(25) NOT NULL,
     user_lastname varchar(40) NOT NULL,
-    user_login varchar(20) NOT NULL,
-    user_password varchar(34) NOT NULL,
+    user_login varchar(64) NOT NULL,
+    user_password varchar(64) NOT NULL,
     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
     ) 
 
@@ -21,6 +21,9 @@ CREATE TABLE IF NOT EXISTS search (
     search_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     ) 
 
+/* To execute the following commands
+    root@lggram:~# mysql -u root --database project_villes
+*/
 CREATE USER 'phpmyadmin'@'localhost' IDENTIFIED BY 'FR@3m:We8!';
 GRANT ALL PRIVILEGES ON users TO 'phpmyadmin'@'localhost';
 GRANT ALL PRIVILEGES ON villes TO 'phpmyadmin'@'localhost';

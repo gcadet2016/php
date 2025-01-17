@@ -1,0 +1,38 @@
+main {
+    display: grid;
+    grid-template-columns: [start] 3fr [info] 1fr [cart] 1fr [end];
+    grid-template-rows: [top] 1fr [middle] 1fr [bottom];
+    margin: 2em;
+}
+.img_container {
+    grid-row: top / bottom;
+    grid-column: start / info;
+}
+.img_promo {
+    width: 500px;
+}
+.info_container {
+    grid-row: top / middle;
+    grid-column: info / cart;
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+}
+.cart_container {
+    grid-row: top / bottom;
+    grid-column: cart / end;
+    padding-left: 1em;
+    border: 1px black solid;
+}
+.cart_table {
+    margin-bottom: 2em;
+}
+.cart_table tr td {
+    padding-left: 1em;
+}
+.action_container button {
+    margin-top: 2em;
+}
+.btn_margin_top {
+    margin-top: 2em;
+}

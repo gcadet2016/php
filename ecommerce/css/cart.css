@@ -1,0 +1,15 @@
+main {
+    margin: 2em;
+}
+.cart_table {
+    margin-bottom: 2em;
+}
+.cart_table tr td {
+    padding-left: 1em;
+}
+.btn_margin_top {
+    margin-top: 2em;
+}
+.product_icon {
+    width: 50px;
+}

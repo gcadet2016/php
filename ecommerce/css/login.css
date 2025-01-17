@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+    color: #0F66E6;
+}
+#wrapper {
+    margin: 25px auto;
+    width: 650px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #5493EF;
+}
+form {
+    padding:20px;
+    background-color: #7FADF2;
+    font-family:Arial;
+}
+label{
+    width: 150px;
+    margin-right: 20px;
+    font-size: 1em;
+    text-align: right;
+}
+form p{
+    margin: 1em 0;
+}
+input, label {
+    display: inline-block;
+}
+   
+.submit-container { 
+    display: flex; 
+    justify-content: flex-end; 
+}
+.error {
+    background-color: #ea68ce;
+}
