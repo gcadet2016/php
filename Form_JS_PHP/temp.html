@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Example</title>
+</head>
+<body>
+    <div id="container"></div>
+    <button id="loadSelect">Charger la liste déroulante</button>
+
+    <script>
+        document.getElementById('loadSelect').addEventListener('click', function() {
+            // Créer une requête AJAX
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', 'temp.php', true);
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    // Ajouter la liste déroulante au conteneur
+                    document.getElementById('container').innerHTML = xhr.responseText;
+
+                    // Ajouter un event listener 'change' à la liste déroulante
+                    document.getElementById('mySelect').addEventListener('change', function() {
+                        console.log('Vous avez sélectionné : ' + this.value);
+                    });
+                }
+            };
+            xhr.send();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#img {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerMain {
+    position: relative;
+    width: 450px;
+}
+
+#audioCtrl {
+    z-index: 1;
+}
+
+#audioContainer {
+    margin-top: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    /* left: 50%; */
+    left: 10%;
+    /* width: 100%; */
+    /* text-align: center; */
+}
+
+#audioList .song {
+    padding: 10px;
+    color: darkslategray;
+    border-bottom: 1px solid #e1e1e1;
+    cursor: pointer;
+}
+
+#audioList .song:first-child {
+    border-top: 1px solid #e1e1e1;
+}
+
+#audioList .song.now {
+    font-weight: 700;
+    color: #333;
+    background: #feffd9;
+}
+
+#audioList .song::before {
+    content: "\2022";
+    margin-right: 10px;
+}
+
+#audioList .song.now::before {
+    content: "\27A4";
+}

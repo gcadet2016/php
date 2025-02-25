@@ -1,0 +1,21 @@
+#containerMain {
+    position: relative;
+}
+
+#containerMain img {
+    width: 100%;
+    box-sizing: border-box;
+}
+#audioContainer {
+    position: absolute;
+    width: 100%;
+    max-width: 1200px; /* Largeur maximale du lecteur audio */
+    top: 63%;
+    text-align: right;
+}
+#audioCtrl {
+    /* position: absolute; */
+    /* top: 20%; */
+    width: 60%;
+    max-width: 1200px; /* Largeur maximale du lecteur audio */
+}

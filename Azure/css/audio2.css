@@ -1,0 +1,45 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background-image: url('../img/bonjour.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+}
+.containerMain {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+#AudioContainer {
+    z-index: 1;
+}
+
+#audioList .song {
+    padding: 10px;
+    color: darkslategray;
+    border-bottom: 1px solid #e1e1e1;
+    cursor: pointer;
+}
+
+#audioList .song:first-child {
+    border-top: 1px solid #e1e1e1;
+}
+
+#audioList .song.now {
+    font-weight: 700;
+    color: #333;
+    background: #feffd9;
+}
+
+#audioList .song::before {
+    content: "\2022";
+    margin-right: 10px;
+}
+
+#audioList .song.now::before {
+    content: "\27A4";
+}
